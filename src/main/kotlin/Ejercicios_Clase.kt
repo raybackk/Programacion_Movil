@@ -19,6 +19,7 @@ fun main() {
     println("El volumen del prisma es de: $volumen")
     println("El promedio de las califiaciones es de: $promedio")
     triangulo(lado1, lado2, lado3)
+    tipoDato(dato=3f)
 }
 fun rectangleArea(base: Double = 20.0, height: Double = 30.0): Double {
     return base*height
@@ -32,7 +33,7 @@ fun volumenPrisma(base: Float, altura: Float, ancho:Float): Float {
 fun promedio(primera: Float = 8f, segunda: Float = 8f, tercera:Float): Float {
     return (primera+segunda+tercera)/3
 }
-fun tipoDato(dato: Any) {
+fun tipoDato(dato:Any) {
     when (dato){
         is String -> println("Es un dato de tipo String")
         is Int -> println("Es un dato de tipo Entero")
